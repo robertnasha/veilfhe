@@ -1,0 +1,15 @@
+#root {
+  min-height: 100vh;
+}
+
+.vault-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+@media (max-width: 900px) {
+  .vault-shell {
+    padding: 1.5rem;
+  }
+}
