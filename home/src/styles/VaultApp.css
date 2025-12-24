@@ -1,0 +1,125 @@
+.vault-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-copy {
+  background: var(--cream);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  animation: floatIn 0.6s ease-out;
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.hero-tags span {
+  border: 1px solid rgba(29, 27, 22, 0.2);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+  background: #fffaf3;
+}
+
+.hero-panel {
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(29, 127, 122, 0.12);
+  border: 1px solid rgba(29, 127, 122, 0.3);
+  box-shadow: 0 18px 40px rgba(29, 127, 122, 0.12);
+  animation: floatIn 0.6s ease-out 0.05s both;
+}
+
+.hero-panel-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-steps {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.vault-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.vault-card {
+  background: #fffdf9;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(29, 27, 22, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-header p {
+  color: var(--muted);
+}
+
+.chip {
+  background: rgba(29, 127, 122, 0.12);
+  color: var(--teal);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.chip.muted {
+  background: rgba(29, 27, 22, 0.08);
+  color: var(--muted);
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
